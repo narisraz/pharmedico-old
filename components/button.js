@@ -8,7 +8,7 @@ export default function Button(props) {
 
   return (
     <button
-      className={`focus:outline-none ${link ? "border-transparent border-b-2 transition ease-in-out 600 hover:border-green-600" : "px-4"} ${className}`}
+      className={`transition ease-in-out 600 focus:outline-none ${link ? "border-transparent border-b-2 hover:border-green-600" : "px-4"} ${className}`}
       onClick={onClick}
       type={`${submit ? "submit" : "button"}`}
     >

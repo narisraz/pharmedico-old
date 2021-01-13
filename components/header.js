@@ -9,6 +9,9 @@ export default function Header() {
         <div className="mb-8 text-6xl font-extrabold text-white">
           Logo
         </div>
+        <div className="mb-8 text-4xl font-bold text-white">
+          Trouvez des médecins et pharmacies n'importe où
+        </div>
         <SearchForm className="w-full shadow-md" />
       </div>  
     </div>

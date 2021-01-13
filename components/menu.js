@@ -10,7 +10,7 @@ export default function Menu(props) {
         <Button link className="font-bold">
           S'identifier
         </Button>
-        <Button className="px-6 py-1 font-bold border-white border-2 rounded-md transition ease-in-out 600 hover:bg-white hover:text-gray-600">
+        <Button className="px-6 py-1 font-bold border-white border-2 rounded-md hover:bg-white hover:text-gray-600">
           S'identifier
         </Button>
       </div>
