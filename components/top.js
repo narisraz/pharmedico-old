@@ -1,3 +1,4 @@
+import Button from '../components/button'
 import Card from '../components/card'
 
 export default function Top(props) {
@@ -6,7 +7,6 @@ export default function Top(props) {
     subTitle,
     elements
   } = props
-  console.log('elements' + JSON.stringify(elements));
 
   return (
     <>
@@ -17,12 +17,17 @@ export default function Top(props) {
         {subTitle}
       </div>
       <div className="flex justify-evenly">
-        {elements.map((element) => 
-          <Card className="w-40 leading-tight" media={element.media}>
+        {elements.map((element, index) => 
+          <Card className="w-40 leading-tight" media={element.media} key={index}>
             <div className="font-bold text-lg leading-none">{element.name}</div>
             <div className="text-sm">{element.info}</div>
           </Card>
         )}
+      </div>
+      <div className="my-4 flex justify-center">
+        <Button link className="text-green-600 text-lg font-bold">
+          Voir plus
+        </Button>
       </div>
     </>
   )
