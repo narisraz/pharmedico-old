@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
 import BasicLayout from '../components/basic-layout'
-import Card from '../components/card'
 import CategoryList from '../components/category-list'
+import Footer from '../components/footer'
 import Header from '../components/header'
 import Top from '../components/top'
 
@@ -86,6 +86,8 @@ export default function Home() {
         </div>
 
       </main>
+
+      <Footer />
     </BasicLayout>
   )
 }
