@@ -3,7 +3,7 @@ import Button from "./button";
 export default function Footer(props) {
   return (
     <footer className="bg-gray-200 flex">
-      <section className="flex py-10 w-1/3 bg-green-600 text-white">
+      <section className="flex py-10 w-1/2 bg-green-600 text-white">
         <div className="mx-auto">
           <div className="text-4xl">
             Logo
@@ -31,7 +31,37 @@ export default function Footer(props) {
           </div>
         </div>
       </section>
-      <section className="p-10">Section 2</section>
+      <section className="p-10 w-full flex justify-around">
+        <div>
+          <div className="mb-4 uppercase text-lg font-semibold text-gray-600">
+            Liens utiles
+          </div>
+          <ul className="text-gray-800 leading-7">
+            <li>
+              <Button link>Charte protection des données</Button>
+            </li>
+            <li>
+              <Button link>FAQ</Button>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="mb-4 uppercase text-lg font-semibold text-gray-600">
+            à propos
+          </div>
+          <ul className="text-gray-800 leading-7">
+            <li>
+              <Button link>Conditions générales</Button>
+            </li>
+            <li>
+              <Button link>Mentions légales</Button>
+            </li>
+            <li>
+              <Button link>Politique de confidentialité</Button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
   )
 }
