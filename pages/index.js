@@ -90,10 +90,20 @@ export default function Home() {
 
         <div className="py-4 my-10 bg-gray-100">
           <Top title="Top médecins" subTitle="Nos top 4 des professionnels de la santé" elements={topDoctors} />
+          <div className="my-4 flex justify-center">
+            <Button link className="text-green-600 text-lg font-bold">
+              Voir plus de médecins
+            </Button>
+          </div>
         </div>
         
         <div className="py-4 my-10 bg-gray-100">
           <Top title="Top pharmacies" subTitle="Nos top 4 des pharmacies" elements={topPharmacies} />
+          <div className="my-4 flex justify-center">
+            <Button link className="text-green-600 text-lg font-bold">
+              Voir plus de pharmacies
+            </Button>
+          </div>
         </div>
 
         <div className="py-4 px-8 my-10 bg-gray-100">
@@ -105,7 +115,7 @@ export default function Home() {
           </HighlightedArticle>
           <div className="my-4 flex justify-center">
             <Button link className="text-green-600 text-lg font-bold">
-              Voir plus
+              Voir plus d'articles
             </Button>
           </div>
         </div>

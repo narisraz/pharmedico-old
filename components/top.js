@@ -24,11 +24,6 @@ export default function Top(props) {
           </Card>
         )}
       </div>
-      <div className="my-4 flex justify-center">
-        <Button link className="text-green-600 text-lg font-bold">
-          Voir plus
-        </Button>
-      </div>
     </>
   )
 }
